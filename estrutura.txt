@@ -1,0 +1,44 @@
+Pessoa:
+ - nome
+
+Pessoa Física:
+ - pessoa (fk)
+ - cpf
+
+Pessoa Jurídica:
+ - pessoa (fk)
+ - cnpj
+
+Dono da pessoa juridica: (Ligação n~n de pessoa pra pessoa jurídica)
+ - pessoa (fk)
+ - pessoa juridica (fk)
+
+Bens:
+ - pessoa (fk)
+ - descrição
+ - valor
+
+
+----------------------------------------------
+
+API onde pudesse constar o:
+
+
+Registro de pessoas, a partir do CPF
+
+Registro de empresas e donos da empresa(podendo ser pessoas físicas e ou jurídicas, ou seja uma empresa que tem como dono uma outra empresa)
+
+Registro de bens e posses de um indivíduo
+
+Para a execução do desafio, você estará livre para escolher o framework que julgar necessário e estruturar as respostas seguindo o formato mais conveniente a você.
+
+Nossos requisitos para o desafio são:
+
+
+Desenvolvimento em Python 3+
+
+Boa cobertura de Testes unitários e outros testes que julgar necessários
+
+Documentação (pode ser docstrings ou um Markdown)
+
+Docker e/ou algum aparato de containerização e deployment
